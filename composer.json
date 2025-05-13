@@ -1,0 +1,24 @@
+{
+    "name": "medianet-dev/media-crack",
+    "homepage": "https://github.com/Medianet-Tunisia/media-crack",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MedianetDev\\MediaCrack\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MedianetDev\\MediaCrack\\CrackServiceProvider"
+            ]
+        }
+    }
+}

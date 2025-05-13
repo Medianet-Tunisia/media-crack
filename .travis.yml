@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 8.0
+  - 8.1
+  - 8.2
+
+install: travis_retry composer install --no-interaction --prefer-dist
+
+script: vendor/bin/phpunit --coverage-clover=coverage.clover
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
